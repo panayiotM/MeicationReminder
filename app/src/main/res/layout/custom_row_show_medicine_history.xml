@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_raw_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="395dp"
+        android:layout_height="159dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="7dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="409dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_blue_900"
+            android:backgroundTint="@color/light_blue_900">
+
+
+            <EditText
+                android:id="@+id/editStartDate3"
+                android:layout_width="85dp"
+                android:layout_height="19dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/light_blue_50"
+                android:backgroundTint="@color/blue"
+                android:ems="10"
+                android:hint="09/03/2023"
+                android:inputType="date"
+                android:textColor="@color/light_blue_50"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/light_blue_50"
+                android:textColorLink="@color/light_blue_50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/editEndDate3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.93"
+                app:layout_constraintStart_toStartOf="@+id/medcineTxtView2"
+                app:layout_constraintTop_toBottomOf="@+id/editDescription"
+                app:layout_constraintVertical_bias="0.807" />
+
+            <EditText
+                android:id="@+id/editEndDate3"
+                android:layout_width="87dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="88dp"
+                android:background="@color/light_blue_50"
+                android:backgroundTint="@color/blue"
+                android:ems="10"
+                android:hint="09/03/2023"
+                android:inputType="date"
+                android:textColor="@color/light_blue_50"
+                android:textColorHighlight="@color/light_blue_50"
+                android:textColorHint="@color/light_blue_50"
+                android:textColorLink="@color/light_blue_50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/medcineTxtView3"
+                app:layout_constraintTop_toBottomOf="@+id/editDescription"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/medcineTxtView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:text="Med Name"
+                android:textColor="@color/light_blue_50"
+                android:textColorHint="@color/light_blue_50"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.234" />
+
+            <TextView
+                android:id="@+id/medcineTxtView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="208dp"
+                android:text="Start Date :"
+                android:textColor="@color/light_blue_50"
+                android:textColorHint="@color/light_blue_50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.116" />
+
+            <TextView
+                android:id="@+id/pillsTaken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="168dp"
+                android:text="17 pills"
+                android:textColor="@color/light_blue_50"
+                android:textColorHint="@color/light_blue_50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.824" />
+
+            <TextView
+                android:id="@+id/medcineTxtView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Mediacation taken :"
+                android:textColor="@color/light_blue_50"
+                android:textColorHint="@color/light_blue_50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.824" />
+
+            <TextView
+                android:id="@+id/medcineTxtView3"
+                android:layout_width="81dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="208dp"
+                android:text="End Date :"
+                android:textColor="@color/light_blue_50"
+                android:textColorHint="@color/light_blue_50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.35" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="52dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

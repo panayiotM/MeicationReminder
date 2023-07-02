@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "547801637815",
+    "project_id": "medreminder-69c39",
+    "storage_bucket": "medreminder-69c39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547801637815:android:e367771297e7464ccbfe32",
+        "android_client_info": {
+          "package_name": "com.example.medreminder3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547801637815-c6la1o2ep0hets7vv4o45rpio5pnf4av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzFIPQrSX8Gu52OM1aCyTefFzbTn1AHrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547801637815-c6la1o2ep0hets7vv4o45rpio5pnf4av.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

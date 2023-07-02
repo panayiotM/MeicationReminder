@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_raw_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="7dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="383dp"
+            android:layout_height="98dp"
+            android:background="@color/light_blue_900"
+            android:backgroundTint="@color/light_blue_900">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="56dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/editbtn"
+                android:layout_width="48dp"
+                android:layout_height="35dp"
+                android:backgroundTint="@color/blue"
+                android:src="@drawable/icon_edit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.952"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.126" />
+
+            <TextView
+                android:id="@+id/medcineTxtView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="Med Name"
+                android:textColor="@color/light_blue_50"
+                android:textColorHint="@color/light_blue_50"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.225" />
+
+            <TextView
+                android:id="@+id/descriptionTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72dp"
+                android:paddingLeft="10dp"
+                android:text="Med description"
+                android:textColor="@color/light_blue_50"
+                android:textColorHint="@color/light_blue_50"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/medcineTxtView25"
+                app:layout_constraintVertical_bias="0.515" />
+
+            <TextView
+                android:id="@+id/takenTimeTxtView"
+                android:layout_width="71dp"
+                android:layout_height="42dp"
+                android:padding="3dp"
+                android:paddingStart="20dp"
+                android:text="time"
+                android:textColor="@color/light_blue_50"
+                android:textColorHint="@color/light_blue_50"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/takebtn"
+                android:layout_width="65dp"
+                android:layout_height="34dp"
+                android:background="@color/sky"
+                android:backgroundTint="@color/light_blue_600"
+                android:text="Take"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.899"
+                app:layout_constraintStart_toEndOf="@+id/descriptionTxtView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.843" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nameFragment">
+
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.example.medreminder3.NameFragment"
+        android:label="@string/first_fragment_label" >
+        <action
+            android:id="@+id/action_nameFragment_to_dateFragment"
+            app:destination="@id/dateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dateFragment"
+        android:name="com.example.medreminder3.DateFragment"
+        android:label="@string/default_web_client_id" >
+        <action
+            android:id="@+id/action_dateFragment_to_refillFragment"
+            app:destination="@id/timeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/refillFragment"
+        android:name="com.example.medreminder3.RefillFragment"
+        android:label="@string/default_web_client_id" >
+        <action
+            android:id="@+id/action_refillFragment_to_setFragment"
+            app:destination="@id/setFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setFragment"
+        android:name="com.example.medreminder3.setFragment"
+        android:label="@string/default_web_client_id"
+        tools:layout="@layout/fragment_set" />
+    <fragment
+        android:id="@+id/timeFragment"
+        android:name="com.example.medreminder3.TimeFragment"
+        android:label="@string/default_web_client_id" >
+        <action
+            android:id="@+id/action_timeFragment_to_refillFragment"
+            app:destination="@id/refillFragment" />
+    </fragment>
+</navigation>

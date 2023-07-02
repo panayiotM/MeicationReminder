@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue_900">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="401dp"
+                android:layout_height="547dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_blue_50">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="386dp"
+                        android:layout_height="69dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Set the start date and end date of your medication"
+                        android:textColor="@color/blue"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/medNameCardview"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.476"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_goneMarginStart="30dp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="188dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="116dp"
+                        android:drawableLeft="@drawable/baseline_calendar_month_24"
+                        android:drawableTint="@color/blue"
+                        android:fontFamily="sans-serif-black"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="16dp"
+                        android:text="Start Date :"
+                        android:textColor="@color/blue"
+                        android:textColorHighlight="@color/black"
+                        android:textColorHint="@color/light_blue_50"
+                        android:textColorLink="@color/black"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView9"
+                        app:layout_constraintEnd_toStartOf="@+id/editStartDate"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editDescription" />
+
+                    <EditText
+                        android:id="@+id/editEndDate2"
+                        android:layout_width="169dp"
+                        android:layout_height="68dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="104dp"
+                        android:background="@color/light_blue_50"
+                        android:backgroundTint="@color/blue"
+                        android:ems="10"
+                        android:hint="09/03/2023"
+                        android:inputType="date"
+                        android:textColor="@color/light_blue_50"
+                        android:textColorHighlight="@color/light_blue_50"
+                        android:textColorHint="@color/light_blue_50"
+                        android:textColorLink="@color/light_blue_50"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/nexbtn"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editDescription"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="187dp"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="104dp"
+                        android:drawableLeft="@drawable/baseline_calendar_month_24"
+                        android:drawableTint="@color/blue"
+                        android:fontFamily="sans-serif-black"
+                        android:paddingStart="10dp"
+                        android:paddingTop="16dp"
+                        android:text="End Date :"
+                        android:textColor="@color/blue"
+                        android:textColorHighlight="@color/black"
+                        android:textColorHint="@color/light_blue_50"
+                        android:textColorLink="@color/black"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toTopOf="@+id/nexbtn"
+                        app:layout_constraintEnd_toStartOf="@+id/updateEndDate"
+                        app:layout_constraintTop_toTopOf="@+id/textView"
+                        app:layout_constraintVertical_bias="0.775" />
+
+                    <EditText
+                        android:id="@+id/editStartDate2"
+                        android:layout_width="171dp"
+                        android:layout_height="65dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="92dp"
+                        android:background="@color/light_blue_50"
+                        android:backgroundTint="@color/blue"
+                        android:ems="10"
+                        android:hint="09/03/2023"
+                        android:inputType="date"
+                        android:textColor="@color/light_blue_50"
+                        android:textColorHighlight="@color/black"
+                        android:textColorHint="@color/light_blue_50"
+                        android:textColorLink="@color/light_blue_50"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/editEndDate2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editDescription"
+                        app:layout_constraintVertical_bias="0.807" />
+
+                    <Button
+                        android:id="@+id/nexbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="151dp"
+                        android:layout_marginEnd="156dp"
+                        android:layout_marginBottom="40dp"
+                        android:text="Next"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>
